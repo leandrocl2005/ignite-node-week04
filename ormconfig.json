@@ -1,0 +1,19 @@
+{
+  "name": "default",
+  "type": "postgres",
+  "port": 5432,
+  "host": "127.0.0.1",
+  "username": "postgres",
+  "password": "root1234",
+  "database": "ignite",
+  "migrations": [
+    "./src/database/migrations/*.ts"
+  ],
+  "cli": {
+    "migrationsDir": "./src/database/migrations"
+  },
+  "entities": [
+    "./src/modules/cars/entities/*.ts",
+    "./src/modules/accounts/entities/*.ts"
+  ]
+}
